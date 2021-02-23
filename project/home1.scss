@@ -270,7 +270,7 @@ ul.language li {
 }
 
 .menu>li:hover {
-    background-color: #262a32;
+    background-color: $submenu;
     border-bottom   : 3px solid #84bc22;
 }
 
@@ -456,7 +456,7 @@ ul.icons {
 
 .language li>a,
 .icons li>a {
-    color: #a2a09e;
+    color: $menu-color;
 }
 //user icon
 /*Modal login*/
@@ -464,7 +464,7 @@ ul.icons {
 .modal-content_container {
     padding: 50px;
     text-align: center;
-    color: #45413e;
+    color: $menu-color;
     position: relative;
     * {
       display: block;
@@ -477,7 +477,7 @@ ul.icons {
       .modal-title {
         margin-bottom: 0;
         line-height: 1.5;
-        color: #45413e;
+        color: $menu-color;
         font-size: 30px;
         font-weight: 900;
       }
@@ -742,6 +742,52 @@ aside {
     }
 }
 
+//featured-products section
+.featured-products{
+    background-color: $submenu;
+    .featured{
+        @extend .container;
+        color: $white;
+        text-align: center;
+        .featured-content{
+            background-color: $white;
+            position: absolute;
+            bottom: 0;
+            max-width: 100%;
+    
+            h3{
+                font-size: 16px;
+                color: $menu-color;
+            }
+            a{
+                font-size: 14px;
+                font-weight: 700;
+                color: $green;
+            }
+        }
+        .feature-slick{
+            .item_wrap{
+                padding: 0 15px;
+                @extend .clearfix;
+                border-radius: 11px;
+    overflow: hidden;
+    height: 100%;
+    height: 100%;
+position: relative;
+            }
+        }
+    }
+    h1 {
+        font-size     : 49px;
+        text-transform: capitalize;
+        font-weight   : 700;}
+        p{
+            font-size: 14px;
+            color: $white;
+            margin-bottom: 0;
+        }
+}
+
 
 
 //Skills section
@@ -764,6 +810,7 @@ aside {
         h4 {
             text-transform: uppercase;
             font-size     : 18px;
+            color: $white;
         }
 
         p {
@@ -779,6 +826,8 @@ aside {
         display     : flex;
         margin-right: -15px;
         margin-left : -15px;
+        padding-top: 48px;
+padding-bottom: 45px;
 
         .col-lg-4,
         .col-md-12,
@@ -1050,7 +1099,7 @@ h1.page-title:before {
     }
 
     .bg-black-mob {
-        background-color: #262a32;
+        background-color: $submenu;
     }
 
     .menu-mobile {

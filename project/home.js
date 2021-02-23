@@ -58,6 +58,26 @@ function cookies() {
   }, 10000);
 }
 
+//featured
+$('.feature-slick').slick({
+  slidesToShow: 4,
+  slidesToScroll: 4
+});
+
+var filtered = false;
+
+$('.js-filter').on('click', function(){
+  if (filtered === false) {
+    $('.feature-slick').slick('slickFilter',':even');
+    $(this).text('Unfilter Slides');
+    filtered = true;
+  } else {
+    $('.feature-slick').slick('slickUnfilter');
+    $(this).text('Filter Slides');
+    filtered = false;
+  }
+});
+
 
 cookies();
 toggleMobileNav();

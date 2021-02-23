@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-.clearfix:after, .border:after, .logo_home:after, footer:after {
+.clearfix:after, .border:after, .logo_home:after, .featured-products .featured .feature-slick .item_wrap:after, footer:after {
   content: "";
   display: table;
   clear: both;
@@ -6240,7 +6240,7 @@ li {
   margin: 0 auto;
 }
 
-.container, header, .discover, footer {
+.container, header, .discover, .featured-products .featured, footer {
   max-width: 1280px;
   margin: 0 auto;
   padding-right: 55px;
@@ -6524,7 +6524,7 @@ ul.icons {
 
 .language li > a,
 .icons li > a {
-  color: #a2a09e;
+  color: #45413e;
 }
 
 /*Modal login*/
@@ -6815,6 +6815,54 @@ aside {
   margin-top: 30px;
 }
 
+.featured-products {
+  background-color: #262a32;
+}
+
+.featured-products .featured {
+  color: #ffffff;
+  text-align: center;
+}
+
+.featured-products .featured .featured-content {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+}
+
+.featured-products .featured .featured-content h3 {
+  font-size: 16px;
+  color: #45413e;
+}
+
+.featured-products .featured .featured-content a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #84bc22;
+}
+
+.featured-products .featured .feature-slick .item_wrap {
+  padding: 0 15px;
+  border-radius: 11px;
+  overflow: hidden;
+  height: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.featured-products h1 {
+  font-size: 49px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.featured-products p {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
 .skills-section {
   background-color: #45413e;
 }
@@ -6835,6 +6883,7 @@ aside {
 .skills-section .skill-item_wrap h4 {
   text-transform: uppercase;
   font-size: 18px;
+  color: #ffffff;
 }
 
 .skills-section .skill-item_wrap p {
@@ -6849,6 +6898,8 @@ aside {
   display: flex;
   margin-right: -15px;
   margin-left: -15px;
+  padding-top: 48px;
+  padding-bottom: 45px;
 }
 
 .skills-section .row .col-lg-4,
