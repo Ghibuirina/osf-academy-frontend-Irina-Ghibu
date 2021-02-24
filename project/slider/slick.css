@@ -23,6 +23,10 @@
   padding: 0;
 }
 
+.feature-slick > .slick-list {
+  height: 100%!important;
+}
+
 .slick-list:focus {
   outline: none;
 }

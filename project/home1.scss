@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+// img {
+//     width: 100%;
+// }
+
 @mixin clearfix {
     &:after {
         content: "";
@@ -179,16 +183,16 @@ nav .image {
     padding-left: 0;
     margin-top  : 0;
 
-    
+
 
     >li {
         padding-top: 10px;
     }
 
     & .level2 {
-        z-index: 1;
-        padding-left         : 0;
-        padding-top:5px;
+        z-index         : 1;
+        padding-left    : 0;
+        padding-top     : 5px;
         position        : absolute;
         width           : 80px;
         border          : 1px solid #ccc;
@@ -196,8 +200,8 @@ nav .image {
         display         : none;
 
         li {
-            display  : block;
-            font-size: 14px;
+            display       : block;
+            font-size     : 14px;
             padding-bottom: 5px;
         }
     }
@@ -213,14 +217,16 @@ ul.language li {
     padding-left: 34px;
     color       : $menu-color;
 }
+
 .language li:hover,
 .language li:focus,
 .language li:active,
-.icons  li>a>i:hover,
-.icons  li>a>i:focus,
-.icons li>a>i:active{
-        color: $green;
-    }
+.icons li>a>i:hover,
+.icons li>a>i:focus,
+.icons li>a>i:active {
+    color: $green;
+}
+
 .fa,
 .fas {
     -webkit-transform: scaleX(-1);
@@ -458,122 +464,144 @@ ul.icons {
 .icons li>a {
     color: $menu-color;
 }
+
 //user icon
 /*Modal login*/
 
 .modal-content_container {
-    padding: 50px;
+    padding   : 50px;
     text-align: center;
-    color: $menu-color;
-    position: relative;
+    color     : $menu-color;
+    position  : relative;
+
     * {
-      display: block;
+        display: block;
     }
+
     a {
-      color: #84bc22;
+        color: #84bc22;
     }
+
     .modal-header {
-      border: 0;
-      .modal-title {
-        margin-bottom: 0;
-        line-height: 1.5;
-        color: $menu-color;
-        font-size: 30px;
-        font-weight: 900;
-      }
+        border: 0;
+
+        .modal-title {
+            margin-bottom: 0;
+            line-height  : 1.5;
+            color        : $menu-color;
+            font-size    : 30px;
+            font-weight  : 900;
+        }
     }
-  
+
     label {
-      text-align: left;
-      font-size: 14px;
-      margin-bottom: 10px;
-      margin-top: 24px;
+        text-align   : left;
+        font-size    : 14px;
+        margin-bottom: 10px;
+        margin-top   : 24px;
     }
+
     input:focus {
-      outline: none;
+        outline: none;
     }
+
     input {
-      width: 100%;
-      border: 2px solid #d7d7d7;
-      height: 40px;
-      border-radius: 20px;
-      font-size: 18px;
-      padding: 0 20px;
-      margin: 0 auto;
-      font-size: 14px;
+        width        : 100%;
+        border       : 2px solid #d7d7d7;
+        height       : 40px;
+        border-radius: 20px;
+        font-size    : 18px;
+        padding      : 0 20px;
+        margin       : 0 auto;
+        font-size    : 14px;
     }
+
     .modal-action {
-      margin: 55px 0 20px 0;
-      input {
-        margin: 0 auto;
-        cursor: pointer;
-        border-color: #84bc22;
-      }
+        margin: 55px 0 20px 0;
+
+        input {
+            margin      : 0 auto;
+            cursor      : pointer;
+            border-color: #84bc22;
+        }
     }
-  }
+}
+
 .modal.modal-cookies {
     * {
-      font-size: 14px;
+        font-size: 14px;
     }
+
     h3 {
-      color: #84bc22;
-      font-size: 16px;
-      font-weight: 900;
-      line-height: 24px;
+        color      : #84bc22;
+        font-size  : 16px;
+        font-weight: 900;
+        line-height: 24px;
     }
+
     .modal-dialog {
-      max-width: 1170px !important;
-      border-radius: 20px;
-      background: #fff;
-      a {
-        color: #84bc22;
-      }
-      .modal-content {
-        border: none;
-        font-weight: 100;
-        position: relative;
-        flex-direction: row;
-        > .btn {
-          position: absolute;
-          right: 0;
-          font-size: 25px;
-          padding: 0px 10px;
-          background: transparent;
-          cursor: pointer;
-          z-index: 3;
-        }
-        .modal-footer {
-          align-self: flex-end;
-          .button {
-            min-width: 145px;
-          }
-          .btn.button:hover {
-            cursor: pointer;
-            background: transparent;
+        max-width    : 1170px !important;
+        border-radius: 20px;
+        background   : #fff;
+
+        a {
             color: #84bc22;
-          }
         }
-      }
+
+        .modal-content {
+            border        : none;
+            font-weight   : 100;
+            position      : relative;
+            flex-direction: row;
+
+            >.btn {
+                position  : absolute;
+                right     : 0;
+                font-size : 25px;
+                padding   : 0px 10px;
+                background: transparent;
+                cursor    : pointer;
+                z-index   : 3;
+            }
+
+            .modal-footer {
+                align-self: flex-end;
+
+                .button {
+                    min-width: 145px;
+                }
+
+                .btn.button:hover {
+                    cursor    : pointer;
+                    background: transparent;
+                    color     : #84bc22;
+                }
+            }
+        }
     }
-  }
+}
+
 //test-icon
-.modal{
+.modal {
     display: none;
 }
-.user-utilities{
-    float: right;
-margin-top: 15px;
+
+.user-utilities {
+    float     : right;
+    margin-top: 15px;
 }
+
 //test ic
 .bd-example-modal-xl-login {
     .modal-content {
-      .modal-header .close {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-      }
+        .modal-header .close {
+            position: absolute;
+            top     : 20px;
+            right   : 20px;
+        }
     }
-  }
+}
+
 ul.language i {
     padding: 0;
 }
@@ -743,49 +771,83 @@ aside {
 }
 
 //featured-products section
-.featured-products{
+.featured-products {
     background-color: $submenu;
-    .featured{
+
+    .featured {
         @extend .container;
-        color: $white;
+        color     : $white;
         text-align: center;
-        .featured-content{
+
+        .featured-content {
             background-color: $white;
-            position: absolute;
-            bottom: 0;
-            max-width: 100%;
-    
-            h3{
+            position        : absolute;
+            bottom          : 0;
+            padding-top: 18px;
+            padding-bottom: 23px;
+           padding-left: 60px;
+           padding-right: 60px;
+   
+
+            h3 {
                 font-size: 16px;
-                color: $menu-color;
+                color    : $menu-color;
+                text-transform: capitalize;
+                line-height: 18px;
+                padding-bottom: 23px;
             }
-            a{
-                font-size: 14px;
+
+            a {
+                font-size  : 14px;
                 font-weight: 700;
-                color: $green;
+                color      : $green;
             }
+           
         }
-        .feature-slick{
-            .item_wrap{
+
+        .feature-slick {
+            .item_wrap {
                 padding: 0 15px;
                 @extend .clearfix;
                 border-radius: 11px;
-    overflow: hidden;
-    height: 100%;
-    height: 100%;
-position: relative;
+                overflow     : hidden;
+                width: 270px;
+                height   : 300px;
+                position : relative;
+                &> img{
+                    width: 100%;
+                    
+                }
             }
         }
+        .slick-arrow{
+            background: #2d343a;
+        border: 0;
+        color: #fff;
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        margin: 3px;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        }
     }
+
+    
+
     h1 {
         font-size     : 49px;
         text-transform: capitalize;
-        font-weight   : 700;}
-        p{
-            font-size: 14px;
-            color: $white;
-            margin-bottom: 0;
-        }
+        font-weight   : 700;
+    }
+
+    p {
+        font-size    : 14px;
+        color        : $white;
+        margin-bottom: 0;
+    }
 }
 
 
@@ -810,7 +872,7 @@ position: relative;
         h4 {
             text-transform: uppercase;
             font-size     : 18px;
-            color: $white;
+            color         : $white;
         }
 
         p {
@@ -821,13 +883,13 @@ position: relative;
     }
 
     .row {
-        display     : -webkit-box;
-        display     : -ms-flexbox;
-        display     : flex;
-        margin-right: -15px;
-        margin-left : -15px;
-        padding-top: 48px;
-padding-bottom: 45px;
+        display       : -webkit-box;
+        display       : -ms-flexbox;
+        display       : flex;
+        margin-right  : -15px;
+        margin-left   : -15px;
+        padding-top   : 48px;
+        padding-bottom: 45px;
 
         .col-lg-4,
         .col-md-12,
@@ -950,9 +1012,10 @@ h1.page-title:before {
 @media screen and (max-width: 1100px) {
     .menu {
         padding-left: 15px;
-.subnav{
-    left: -205px;
-}
+
+        .subnav {
+            left: -205px;
+        }
     }
 
     .logo-text span {
@@ -973,9 +1036,10 @@ h1.page-title:before {
     .level1 li a {
         font-size: 12px;
     }
-.level3{
-    padding-right: 55px;
-}
+
+    .level3 {
+        padding-right: 55px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -1027,7 +1091,7 @@ h1.page-title:before {
         .categoriest>li,
         .about>li {
             position: relative;
-            
+
         }
 
         .contact>.fa-sort-down,
@@ -1036,13 +1100,16 @@ h1.page-title:before {
             position: absolute;
             right   : 0;
         }
-        .lvl1> .social-media> li{
+
+        .lvl1>.social-media>li {
             display: inline-block;
         }
-        .lvl1 > span > .fas.fa-sort-down {
+
+        .lvl1>span>.fas.fa-sort-down {
             position: absolute;
-            right: 15px;
+            right   : 15px;
         }
+
         .lvl1 li.has-children.open>ul {
             display: block;
         }
@@ -1075,6 +1142,7 @@ h1.page-title:before {
     .icons {
         display: none;
     }
+
     nav {
         display: none;
     }
