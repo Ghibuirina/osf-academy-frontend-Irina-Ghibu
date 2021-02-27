@@ -378,6 +378,7 @@ function showHide() {
   var items = document.querySelectorAll(".products--popular .item");
 }
 
+
 function close_accordion_section() {
   $(".footer-info h4").removeClass("active");
   $(".footer-info_description")

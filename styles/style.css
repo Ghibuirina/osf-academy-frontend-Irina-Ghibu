@@ -52,6 +52,40 @@ p {
   line-height: 18px;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+*:focus {
+  outline: none;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 28px;
@@ -1443,7 +1477,7 @@ footer .user-utilities img:hover {
 }
 
 @media screen and (min-width: 768px) {
-  footer .footer-info_description {
+  footer .footer-info_description > .open {
     display: block !important;
   }
   footer .footer-info > h4 {
