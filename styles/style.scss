@@ -1313,9 +1313,9 @@ footer {
     }
     
   }
-  // .footer-info_description.open{
-  //   display: block!important;
-  // }
+  .footer-info_description.open{
+    display: block!important;
+  }
   .list--social {
     display: flex;
     justify-content: flex-end;

@@ -1417,6 +1417,10 @@ footer .footer-info_description ul li {
   line-height: 31px;
 }
 
+footer .footer-info_description.open {
+  display: block !important;
+}
+
 footer .list--social {
   display: -webkit-box;
   display: -ms-flexbox;
